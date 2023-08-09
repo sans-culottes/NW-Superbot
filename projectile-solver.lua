@@ -46,4 +46,17 @@ function module.SolveTrajectory(
 	return
 end
 
+function module.SolveLinearTrajectory(
+	
+	origin: Vector3,
+	projectileSpeed: number,
+	targetPos: Vector3,
+	targetVelocity: Vector3
+	
+	): Vector3?
+	
+	local t = (targetPos - origin).Magnitude / (800 - targetVelocity.Magnitude)
+	return targetPos + (t * targetVelocity.Unit * targetVelocity.Magnitude)
+end
+
 return module
