@@ -1,7 +1,7 @@
 -- Credit to nachiyen
 local module = {}
 
-local quartic = loadstring(game:HttpGet('https://raw.githubusercontent.com/sans-culottes/NW-Superbot/main/cardano-ferrari.lua?token=GHSAT0AAAAAACGCP4R57QMD5FIJP7R6NUOIZGUCGWA'))().solveQuartic
+local quartic = loadstring(game:HttpGet('https://raw.githubusercontent.com/sans-culottes/NW-Superbot/main/cardano-ferrari.lua'))().solveQuartic
 
 function module.SolveTrajectory(
 	
